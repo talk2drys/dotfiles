@@ -30,8 +30,8 @@ return {
         typeHints = true,
         lifetimeElisionHints = {
           enable = true,
-          useParameterNames = true
-        }
+          useParameterNames = true,
+        },
       },
       lens = {
         methodReferences = true,
