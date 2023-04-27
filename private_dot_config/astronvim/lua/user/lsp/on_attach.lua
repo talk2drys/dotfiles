@@ -1,0 +1,4 @@
+-- return function(client, bufnr)
+--   local lsp_utils = require "astronvim.utils.lsp"
+--   return lsp_utils.on_attach(client, bufnr)
+-- end
