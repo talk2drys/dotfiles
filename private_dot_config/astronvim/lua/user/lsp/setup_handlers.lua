@@ -10,13 +10,17 @@ return {
     require("lspconfig")["sumneko_lua"].setup(opts)
   end,
 
-  -- rust_analyzer = function(_, opts)
-  --   print(vim.inspect(opts))
-  --   require("rust-tools").setup({ server = opts })
-  -- end,
+  rust_analyzer = function(_, opts)
+    -- print(vim.inspect(opts))
+    -- local hh = require("astronvim.utils.lsp").config("rust_analyzer")
+    -- require("rust-tools").setup({ server = hh })
+    require("rust-tools").setup({ server = opts })
+  end,
+
   dartls = function(_, opts)
     require("flutter-tools").setup({ lsp = opts })
   end,
+
   clangd = function(_, opts)
     require("clangd_extensions").setup({ server = opts })
   end,

@@ -15,6 +15,7 @@ return {
         "lua_ls",
         "yamlls",
         "teal_ls",
+        "rust_analyzer",
       },
     },
   },
